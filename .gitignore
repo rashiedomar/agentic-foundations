@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+.env
+.venv/
+env/
+venv/
+*.ipynb_checkpoints
+# Data
+data/**/*.parquet
+data/**/*.csv
+data/**/*.jsonl
+# Jupyter
+.ipynb_checkpoints
+# OS
+Thumbs.db
