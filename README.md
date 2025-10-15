@@ -19,20 +19,20 @@ This is a **learning-in-public** repository where I:
 Each lesson builds on the previous ones. Start from Lesson 1 if you're new to agentic AI.
 
 ### Phase 1: Foundations
-- **Lesson 1:** [What is an AI Agent?](lessons/01-what-is-an-agent.md) - Understanding agents vs models vs tools
-- **Lesson 2:** [The Agent Loop](lessons/02-agent-loop.md) - Perceive → Plan → Act → Reflect cycle
-- **Lesson 3:** [Memory Systems](lessons/03-memory-systems.md) - Short-term, long-term, and episodic memory
-- **Lesson 4:** [First Agent](lessons/04-first-agent.md) - Building a simple reflection agent
+- ✅ **[Lesson 1: What is an AI Agent?](lessons/01-what-is-an-agent.md)** - Understanding agents vs models vs tools
+- 🔜 **Lesson 2: The Agent Loop** - Perceive → Plan → Act → Reflect cycle
+- 🔜 **Lesson 3: Memory Systems** - Short-term, long-term, and episodic memory
+- 🔜 **Lesson 4: First Agent** - Building a simple reflection agent
 
 ### Phase 2: Core Components  
-- **Lesson 5:** [Planning & Reasoning](lessons/05-planning.md) - Task decomposition and tool selection
-- **Lesson 6:** [Tool Integration](lessons/06-tools.md) - Giving agents capabilities
-- **Lesson 7:** [Error Handling](lessons/07-error-handling.md) - Making agents robust
+- **Lesson 5: Planning & Reasoning** - Task decomposition and tool selection
+- **Lesson 6: Tool Integration** - Giving agents capabilities
+- **Lesson 7: Error Handling** - Making agents robust
 
 ### Phase 3: Advanced Topics
-- **Lesson 8:** [Multi-Agent Systems](lessons/08-multi-agent.md) - Agents working together
-- **Lesson 9:** [Environment Interfaces](lessons/09-environments.md) - Connecting agents to the real world
-- **Lesson 10:** [Evaluation](lessons/10-evaluation.md) - Measuring agent performance
+- **Lesson 8: Multi-Agent Systems** - Agents working together
+- **Lesson 9: Environment Interfaces** - Connecting agents to the real world
+- **Lesson 10: Evaluation** - Measuring agent performance
 
 *More lessons added as I learn...*
 
@@ -77,14 +77,18 @@ Want to follow along? Here's how:
 ## 🎓 My Learning Goals
 
 By the end of this journey, I want to:
-- [ ] Understand how modern AI agents work under the hood
+- [x] Understand what makes an agent different from a model
 - [ ] Build agents that can plan and execute multi-step tasks
 - [ ] Create agents for real-world use cases (research, coding, data analysis)
 - [ ] Contribute to the agentic AI community
 
 ## 🗺️ Progress Tracker
 
-Check [ROADMAP.md](ROADMAP.md) for my detailed learning plan and what I'm currently working on.
+**Current Phase:** Phase 1 - Foundations  
+**Lessons Completed:** 1/10  
+**Last Updated:** January 2025
+
+Check [ROADMAP.md](ROADMAP.md) for my detailed learning plan and progress.
 
 ## 🤝 Contributing
 
@@ -95,10 +99,12 @@ This is my personal learning repo, but if you're learning too:
 
 ## 📬 Connect
 
-Learning AI agents too? Let's connect! Open an issue or find me on [your social links].
+Learning AI agents too? Let's connect!
+- Open an issue to discuss
+- Follow the repo for updates
+- Share your own learning journey
 
 ---
 
-**Last Updated:** January 2025  
-**Current Phase:** Phase 1 - Foundations ✅  
-**Next Up:** Building memory systems
+**License:** MIT  
+**Status:** 🟢 Actively Learning
