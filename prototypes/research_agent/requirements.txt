@@ -1,0 +1,10 @@
+# Research Assistant Dependencies
+
+# Core LLM
+google-generativeai>=0.3.0
+
+# HTTP requests for tools
+requests>=2.31.0
+
+# Utilities
+python-dateutil>=2.8.2
