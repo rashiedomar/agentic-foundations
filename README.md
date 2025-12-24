@@ -24,15 +24,18 @@ Each lesson builds on the previous ones. Start from Lesson 1 if you're new to ag
 - ✅ **[Lesson 3: Memory Systems](lessons/03-memory-systems.md)** - Short-term, long-term, and episodic memory
 - ✅ **[Lesson 4: First Agent](lessons/04-first-agent.md)** - Building a simple reflection agent
 
-### Phase 2: Core Components 🚧
+### Phase 2: Core Components ✅
 - ✅ **[Lesson 5: Planning & Reasoning](lessons/05-planning-reasoning.md)** - Task decomposition, CoT, ToT, ReAct strategies
   - 📓 [Notebook: Interactive Planning Experiments](notebooks/lesson_05_planning_experiments.py)
   - 🏗️ [Prototype: Production Planning Agent](prototypes/planning_agent.py)
-- 🔄 **Lesson 6: Tool Integration** - Giving agents superpowers (In Progress)
+- ✅ **[Lesson 6: Tool Integration](lessons/06-tool-integration.md)** - Giving agents superpowers
+  - 🛠️ [Prototype: Tool Registry & Execution](src/tools/)
+  - 🔧 [Examples: Tool Integration Patterns](notebooks/lesson_06_tool_examples.py)
+  - 🤖 [Complete Agent: Planning + Tools](prototypes/integrated_agent.py)
 - 🔜 **Lesson 7: Error Handling** - Making agents robust
 
-### Phase 3: Advanced Topics
-- 🔜 **Lesson 8: Multi-Agent Systems** - Agents working together
+### Phase 3: Advanced Topics 🚧
+- 🔄 **Lesson 8: Multi-Agent Systems** - Agents working together (In Progress)
 - 🔜 **Lesson 9: Environment Interfaces** - Connecting agents to the real world
 - 🔜 **Lesson 10: Evaluation** - Measuring agent performance
 
@@ -47,12 +50,16 @@ agentic-foundations/
 │   ├── 02-agent-loop.md
 │   ├── 03-memory-systems.md
 │   ├── 04-first-agent.md
-│   └── 05-planning-reasoning.md
+│   ├── 05-planning-reasoning.md
+│   └── 06-tool-integration.md
 ├── src/              # Reusable agent components I'm building
+│   └── tools/        # Tool registry and execution system
 ├── prototypes/       # Production-ready agent implementations
-│   └── planning_agent.py      # Full planning agent with multiple strategies
+│   ├── planning_agent.py      # Full planning agent with multiple strategies
+│   └── integrated_agent.py    # Complete agent with planning + tools
 ├── notebooks/        # Interactive learning & experiments
-│   └── lesson_05_planning_experiments.py
+│   ├── lesson_05_planning_experiments.py
+│   └── lesson_06_tool_examples.py
 ├── docs/            # Technical notes and architecture
 └── logs/            # Run logs and reflections
 ```
@@ -77,17 +84,20 @@ Want to follow along? Here's how:
    ```bash
    # Run the planning experiments
    python notebooks/lesson_05_planning_experiments.py
+   
+   # Explore tool integration
+   python notebooks/lesson_06_tool_examples.py
    ```
 
 4. **Experiment with prototypes**
    ```python
-   # Use the production planning agent
-   from prototypes.planning_agent import PlanningAgent, PlanningStrategy
+   # Use the integrated agent (planning + tools)
+   from prototypes.integrated_agent import IntegratedAgent
    
-   agent = PlanningAgent(llm=your_llm)
+   agent = IntegratedAgent(llm=your_llm)
    result = agent.execute_goal(
-       goal="Your goal here",
-       strategy=PlanningStrategy.CHAIN_OF_THOUGHT
+       goal="Research the latest AI developments and create a summary",
+       use_tools=True
    )
    ```
 
@@ -97,8 +107,8 @@ Want to follow along? Here's how:
 ## 📖 Resources I'm Learning From
 
 - **Frameworks:** LangGraph, CrewAI, AutoGen
-- **Research Papers:** ReAct, Chain-of-Thought, Tree-of-Thoughts
-- **Documentation:** OpenAI Agents SDK, Anthropic Claude
+- **Research Papers:** ReAct, Chain-of-Thought, Tree-of-Thoughts, Toolformer
+- **Documentation:** OpenAI Agents SDK, Anthropic Claude, Function Calling
 - **Community:** GitHub discussions, Discord communities
 
 ## 🎓 My Learning Goals
@@ -106,27 +116,40 @@ Want to follow along? Here's how:
 By the end of this journey, I want to:
 - [x] Understand what makes an agent different from a model
 - [x] Grasp the core agent loop and planning strategies
-- [ ] Build agents that can plan and execute multi-step tasks
-- [ ] Integrate tools to give agents real capabilities
+- [x] Build agents that can plan and execute multi-step tasks
+- [x] Integrate tools to give agents real capabilities
 - [ ] Create agents for real-world use cases (research, coding, data analysis)
+- [ ] Build multi-agent systems that collaborate
 - [ ] Contribute to the agentic AI community
 
 ## 🗺️ Progress Tracker
 
-**Current Phase:** Phase 2 - Core Components  
-**Lessons Completed:** 5/10  
-**Current Focus:** Tool Integration (Lesson 6)  
-**Next Milestone:** Build complete agent with planning + tools  
-**Last Updated:** October 2025
+**Current Phase:** Phase 3 - Advanced Topics  
+**Lessons Completed:** 6/10  
+**Phase 1:** ✅ Complete (4/4 lessons)  
+**Phase 2:** ✅ Complete (2/2 lessons)  
+**Current Focus:** Multi-Agent Systems (Lesson 8)  
+**Next Milestone:** Build collaborative multi-agent system  
+**Last Updated:** December 24, 2025
 
 Check [ROADMAP.md](ROADMAP.md) for my detailed learning plan and progress.
 
-## 🎯 Coming Up Next
+## 🎯 Recent Achievements
 
-After completing **Lesson 6: Tool Integration**, I'll build a **real integrated example** that combines:
-- Planning & reasoning (Lesson 5) ✅
-- Tool integration (Lesson 6) 🔄
-- Complete working agent that can research, analyze, and report
+✅ **Completed Phase 2: Core Components**
+- Built complete planning system with multiple strategies (CoT, ToT, ReAct)
+- Implemented comprehensive tool integration system
+- Created production-ready integrated agent combining planning + tools
+- Developed tool registry, safe execution, and error handling
+- Built working examples: research assistant, data analyst, code helper
+
+## 🔥 Coming Up Next
+
+Now working on **Lesson 8: Multi-Agent Systems**:
+- Agent communication protocols
+- Task delegation and coordination
+- Building agent teams that collaborate
+- Real example: Research team with specialized agents
 
 ## 🤝 Contributing
 
@@ -146,4 +169,4 @@ Learning AI agents too? Let's connect!
 
 **License:** MIT  
 **Status:** 🟢 Actively Learning  
-**Progress:** Phase 2 - Core Components (50% complete)
+**Progress:** Phase 2 Complete | Phase 3 In Progress (60% complete)
